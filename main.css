@@ -67,6 +67,7 @@
   justify-content: space-between;
   display: block;
 }
+/
 .num{
 
   background-color: #7c7474;
@@ -78,7 +79,7 @@
   text-align: center;
   /*border-style: solid;
   border-color: : pink;*/
-
+*/
 
 }
 .align{
@@ -129,7 +130,7 @@
 #num1{
   padding: 10px;
   flex: 1;
-  color: black;
+  color: red;
   border: solid;
 }
 #num2{
