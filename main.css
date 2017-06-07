@@ -1,0 +1,224 @@
+.bg{
+  background-color: #b7b7b7;
+  width: 1200px;
+  height:1000px;
+}
+
+.bgSideA{
+  background-color: #ccc7c7;
+  width: 500px;
+  height:1000px;
+  border-style: solid;
+  border-color: red;
+  display: flex;
+}
+
+.bgSideB{
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: green;
+  width: 680px;
+  height:1000px;
+  display: flex;
+}
+.center_grid{
+  /*border-style: solid;
+  border-color: orange;*/
+  display: flex;
+  width: 600px;
+  height: 270px;
+  margin-top: 100px;
+  margin-left: 5px;
+  padding-bottom: 50px;
+}
+
+.flex-grid{
+  display: flex;
+}
+
+.cont1{
+  height: 50px;
+  width: 400px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont2{
+  height: 50px;
+  width: 400px;
+  justify-content: space-between;
+  display: block;
+}
+
+.cont3{
+  height: 50px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  display: block;
+}
+
+.cont4{
+  height: 50px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: block;
+}
+.num{
+
+  background-color: #7c7474;
+  height: 75px;
+  width: 75px;
+  /*margin: auto;*/
+  flex-grow: 0;
+  justify-content: space-between;
+  text-align: center;
+  /*border-style: solid;
+  border-color: : pink;*/
+
+
+}
+.align{
+  display: inline-flex;
+}
+
+.p{
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.row1{
+  margin: 10px;
+}
+.row2{
+  margin: 10px;
+}
+.row3{
+  margin: 10px;
+}
+.row4{
+  margin: 10px;
+}
+
+.reset{
+  display: flex;
+  margin: 40px;
+  height: 45px;
+  width:  65px;
+
+}
+
+#myReset{
+  display: flex;
+  margin-bottom: : 20px;
+  margin: 40px;
+  height: 45px;
+  width:  65px;
+  position: absolute;
+}
+
+#myBtn{
+  border-style: solid;
+  border-color: green;
+  position: relative;
+
+}
+#num1{
+  padding: 10px;
+  flex: 1;
+  color: black;
+  border: solid;
+}
+#num2{
+  padding: 10px;
+  flex: 2;
+  color: black;
+  border: solid;
+}
+#num3{
+  padding: 10px;
+  flex: 3;
+  color: black;
+  border: solid;
+}
+#num4{
+  padding: 10px;
+  flex: 4;
+  color: black;
+  border: solid;
+}
+#num5{
+  flex: 5;
+  padding: 10px;
+  color: black;
+  border: solid;
+}
+#num6{
+  flex: 6;
+  padding: 10px;
+  color: black;
+  border: solid;
+}
+#num7{
+  flex: 7;
+  padding: 10px;
+  color: black;
+  border: solid;
+}
+#num8{
+  flex: 8;
+  padding: 10px;
+  color: black;
+  border: solid;
+}
+#num9{
+  flex: 9;
+  padding: 10px;
+  color: black;
+  border: solid;
+}
+#num10{
+  flex: 10;
+  padding: 10px;
+  color: black;
+  border: solid;
+}
+#num11{
+  flex: 11;
+  padding: 10px;
+  color: black;
+  border: solid;
+}
+#num12{
+  flex: 12;
+  padding: 10px;
+  color: black;
+  border: solid;
+}
+#num13{
+  flex: 13;
+  padding: 10px;
+  color: black;
+  border: solid;
+}
+#num14{
+  flex: 14;
+  padding: 10px;
+  color: black;
+  border: solid;
+}
+#num15{
+  flex: 15;
+  padding: 10px;
+  color: black;
+  border: solid;
+}
+#num16{
+  flex: 16;
+  padding: 10px;
+  color: black;
+  border: solid;
+}

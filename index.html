@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <title>Bossgle</title>
+  </head>
+  <body>
+    <div class = "bg">
+      <div class = "bgSideA align">
+        <div class = "sideA">
+          <h1>Bossggle</h1>
+        <p>Make words by clicking the letters!</p>
+
+        <h6>Score</h6>
+          <p id="userScore"></p>
+        <h6>Words</h6>
+          <p id="userText"></p>
+        </div>
+      </div>
+      <div class = "bgSideB align">
+        <h2>Code</h2>
+        <div class = "center_grid">
+        <div class = "cont1 flex-grid">
+        <div onmousedown = "key1()" onmouseup = "key1MouseUp()" class = "num p row1">  <p id = "num1" >A</p></div>
+        <div class = "num p row2 "> <P id = "num2" >Z</P></div>
+        <div class = "num p row3 "> <P id = "num3" >C</P></div>
+        <div class = "num p row4 "> <P id = "num4">F</P></div>
+        </div>
+        <div class = "cont2 flex-grid">
+        <div class = "num p row1"> <P id = "num5">W</P></div>
+        <div class = "num p row2"> <P id = "num6" >O</P></div>
+        <div class = "num p row3"> <P id = "num7" >L</P></div>
+        <div class = "num p row4"> <P id = "num8" >E</P></div>
+        </div>
+        <div class = "cont3 flex-grid">
+        <div class = "num p row1"> <P id = "num9" >N</P></div>
+        <div class = "num p row2"> <P id = "num10">A</P></div>
+        <div class = "num p row3"> <P id = "num11" >Q</P></div>
+        <div class = "num p row4"> <P id = "num12" >M</P></div>
+        </div>
+        <div class = "cont4 flex-grid">
+        <div class = "num p row1"> <P id = "num13" >D</P></div>
+        <div class = "num p row2"> <P id = "num14" >R</P></div>
+        <div class = "num p row3"> <P id = "num15" >U</P></div>
+        <div class = "num p row4"> <P id = "num16" >I</P></div>
+          </div>
+          <div class = "btn1">
+            <button type = "button" class = "reset" id = "myBtn">Submit</button>
+            <button type = "button" class = "reset" id = "myReset">RESET</button>
+              </div>
+        </div>
+      </div>
+      <h1>Testing</h1>
+    </div>
+    <script src=bossgle.js></script>
+  </body>
+</html>
