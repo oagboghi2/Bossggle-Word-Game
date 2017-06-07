@@ -19,11 +19,11 @@ var num16 = document.getElementById("num16");
 
 ///////
 var myBtn = document.getElementById("myBtn");
-var myReset = document.getElementById("myReset");
+var myClear = document.getElementById("myClear");
 
 var score = 0;
 var word = "";
-var num = document.getElementById("num1")
+var num = document.getElementById("num1");
 console.log(num);
 //alert(num1);
 //document.getElementById("userText").style.display = "block";
@@ -46,151 +46,205 @@ myBtn.addEventListener('click', function(){
     }
     document.getElementById("userScore").innerHTML = score;
   //};
-})
+});
 
-myReset.addEventListener('click', function(){
+myClear.addEventListener('click', function(){
   score = 0;
   word = "";
   document.getElementById("userScore").innerHTML = score;
   document.getElementById("userText").innerHTML = word;
-})
+});
 
 
 /////
 //num1.addEventListener('click',
 var key1 = function(){
   num.style.borderColor = "orange";
-  word+=("A")
+  word+=("A");
   document.getElementById("userText").innerHTML = word
-  console.log(word)
+  console.log(word);
   //wordCount;
-  console.log(score)
-}
+  console.log(score);
+};
 
 var key1MouseUp = function(){
   num.style.borderColor = "black";
-  word+=("A")
   document.getElementById("userText").innerHTML = word
-  console.log(word)
-  //wordCount;
-  console.log(score)
-}
-num2.addEventListener('click', function(){
+};
+
+var key2 = function(){
   num.style.borderColor = "orange";
   word+=("Z")
   document.getElementById("userText").innerHTML = word
   console.log(word)
-  //wordCount;
-})
+};
 
-num3.addEventListener('click', function(){
+  var key2MouseUp = function(){
+    num.style.borderColor = "black";
+};
+
+var key3 = function(){
   num.style.borderColor = "orange";
-  word+=("C")
+  word+=("C");
   document.getElementById("userText").innerHTML = word
   console.log(word)
-  //wordCount;
-})
+};
 
-num4.addEventListener('click', function(){
+  var key3MouseUp = function(){
+    num.style.borderColor = "black";
+};
+
+var key4 =  function(){
   num.style.borderColor = "orange";
   word+=("F")
   document.getElementById("userText").innerHTML = word
   console.log(word)
-  //wordCount;
-})
+};
 
-num5.addEventListener('click', function(){
+  var key4MouseUp = function(){
+    num.style.borderColor = "black";
+};
+
+var key5 = function(){
   num.style.borderColor = "orange";
-  word+=("W")
+  word+=("W");
   document.getElementById("userText").innerHTML = word
   console.log(word)
   //wordCount;
-})
+};
 
-num6.addEventListener('click', function(){
+var key5MouseUp = function(){
+  num.style.borderColor = "black";
+};
+
+var key6 = function(){
   num.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
-  word+=("O")
-  console.log(word)
+  word+=("O");
+  console.log(word);
   //wordCount;
-})
+};
 
-num7.addEventListener('click', function(){
+var key6MouseUp = function(){
+  num.style.borderColor = "black";
+};
+
+var key7 = function(){
   num.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
-  word+=("L")
+  word+=("L");
   console.log(word)
   //wordCount;
-})
+};
 
-num8.addEventListener('click', function(){
+var key7MouseUp = function(){
+  num.style.borderColor = "black";
+};
+
+var key8 = function(){
   num.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
-  word+=("E")
+  word+=("E");
   console.log(word)
   //wordCount;
-})
+};
 
-num9.addEventListener('click', function(){
+var key8MouseUp = function(){
+  num.style.borderColor = "black";
+};
+
+var key9 = function(){
   num.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
-  word+=("N")
+  word+=("N");
   console.log(word)
   //wordCount;
-})
+};
 
-num10.addEventListener('click', function(){
+var key9MouseUp = function(){
+  num.style.borderColor = "black";
+};
+
+var key10 = function(){
   num.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
-  word+=("A")
+  word+=("A");
   console.log(word)
   //wordCount;
-})
+};
 
-num11.addEventListener('click', function(){
+var key10MouseUp = function(){
+  num.style.borderColor = "black";
+};
+
+var key11 = function(){
   num.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
-  word+=("Q")
+  word+=("Q");
   console.log(word)
   //wordCount;
-})
+};
 
-num12.addEventListener('click', function(){
+var key11MouseUp = function(){
+  num.style.borderColor = "black";
+};
+
+var key12 = function(){
   num.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
-  word+=("M")
+  word+=("M");
   console.log(word)
   //wordCount;
-})
+};
 
-num13.addEventListener('click', function(){
+var key12MouseUp = function(){
+  num.style.borderColor = "black";
+};
+
+var key13 = function(){
   num.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
-  word+=("D")
+  word+=("D");
   console.log(word)
   //wordCount;
-})
+};
 
-num14.addEventListener('click', function(){
+var key13MouseUp = function(){
+  num.style.borderColor = "black";
+};
+
+var key14 = function(){
   num.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
-  word+=("R")
+  word+=("R");
   console.log(word)
   //wordCount;
-})
+};
 
-num15.addEventListener('click', function(){
+var key14MouseUp = function(){
+  num.style.borderColor = "black";
+};
+
+var key15 = function(){
   num.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
-  word+=("U")
+  word+=("U");
   console.log(word)
   //wordCount;
-})
+};
 
-num16.addEventListener('click', function(){
+var key15MouseUp = function(){
+  num.style.borderColor = "black";
+};
+
+var key16 = function(){
   num.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
-  word+=("I")
+  word+=("I");
   console.log(word)
   //wordCount;
-})
+};
+
+var key16MouseUp = function(){
+  num.style.borderColor = "black";
+};
