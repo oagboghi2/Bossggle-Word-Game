@@ -21,19 +21,29 @@
   height:1000px;
   display: flex;
 }
+.flex-grid{
+  display: flex;
+}
 .center_grid{
   /*border-style: solid;
   border-color: orange;*/
   display: flex;
   width: 600px;
   height: 270px;
-  margin-top: 100px;
+  margin-top: 70px;
   margin-left: 5px;
   padding-bottom: 50px;
 }
-
-.flex-grid{
+.centerText{
+  /*border-style: solid;
+  border-color: red;*/
   display: flex;
+  color : pink;
+  margin-left: 300px;
+  margin-top: 1px;
+  max-height: 50px;
+  padding-bottom: 50px;
+  position: absolute
 }
 
 .cont1{

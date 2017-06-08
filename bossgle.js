@@ -20,21 +20,25 @@ var num16 = document.getElementById("num16");
 ///////
 var myBtn = document.getElementById("myBtn");
 var myClear = document.getElementById("myClear");
+var myReset = document.getElementById("myReset");
+
+//////
+//var wrap = document.getElementByid("wrap");
+
 
 var score = 0;
 var word = "";
 var num = document.getElementById("num1");
 console.log(num);
 var myVar;
-var library = [].reverse();
+var library = []
 //alert(num1);
 //document.getElementById("userText").style.display = "block";
 
 
 
-/////
+/////Buttons////
 myBtn.addEventListener('click', function(){
-  //var wordCount = function(word){
   var newDiv = document.createElement("div");
   var newContent = document.createTextNode(word);
   newDiv.appendChild(newContent);
@@ -43,25 +47,18 @@ myBtn.addEventListener('click', function(){
   sideA.appendChild(newDiv);
 
     for(var i = 0; i < word.length + 1; i++){
-      if( i>= 1 === true){
+      if( i>= 2 === true){
         //console.log(word);
-        score += 9;
+        score += (9 * word.length);
         library.push("\n" +  word);
         word = "";
+        userText.removeChild(userText.firstChild);
         console.log(score);
       }else{
         score += 0 ;
-        //console.log(score);
       }
-
     }
-    //var newDiv = document.createElement("div");
-    //var newContent = document.createTextNode(word);
-    //newDiv.appendChild(newContent);
-
-    //var sideA = document.getElementById("sideA")
-    //sideA.appendChild(newDiv);
-    //document.getElementById("userScore").innerHTML = score;
+    document.getElementById("userScore").innerHTML = score;
     //document.getElementById("userLib").innerHTML = '<p>'+library+'</p>';
   //};
 });
@@ -70,205 +67,249 @@ myClear.addEventListener('click', function(){
   score = 0;
   word = "";
   document.getElementById("userScore").innerHTML = score;
+  userText.removeChild(userText.firstChild);
 });
 
+myReset.addEventListener('click', function(){
+  score = 0;
+  word = " ";
+  library = [];
+  userText.removeChild(userText.firstChild);
+  document.getElementById("userScore").innerHTML = score;
+});
 
-/////
-//num1.addEventListener('click',
+////////Timer//
+/*myBtn.addEventListener('click', function(){
+  var gameTimer = function(){
+    setInterval(function(){
+      alert("Times Up");
+    }, 2000);
+  };
+})*/
+
+myBtn.addEventListener('click', function(){
+  setInterval(function(){
+    alert("Times Up");
+  }, 60000);
+})
+
+
+/////Dictionary///
+
+
+/////Keys////
 var key1 = function(){
+  var n = word.length;
   num1.style.borderColor = "orange";
   word+=("A");
   document.getElementById("userText").innerHTML = word
-  console.log(word);
-  //wordCount;
-  console.log(score);
+  document.getElementById("userText2").innerHTML = word
+  console.log(word)
 };
 
-/*var key1MouseUp = function(){
-  num1.style.borderColor = "black";
-  document.getElementById("userText").innerHTML = word
-};*/
+key1MouseUp = function(){
+    setInterval(function(){
+        num1.style.borderColor = "black" },  1000)} ;
 
-key1MouseUp = function(){setInterval(function(){num1.style.borderColor = "black" },  1000)} ;
-  //myVar = setInterval(function(
-    //num1.style.borderColor = "black";
-  //} 3000)
-//}
 
 
 var key2 = function(){
   num2.style.borderColor = "orange";
   word+=("Z")
   document.getElementById("userText").innerHTML = word
+  document.getElementById("userText2").innerHTML = word
   console.log(word)
 };
 
   var key2MouseUp = function(){
-    num2.style.borderColor = "black";
-};
+    setInterval(function(){
+        num2.style.borderColor = "black" },  1000)} ;
 
 var key3 = function(){
   num3.style.borderColor = "orange";
   word+=("C");
   document.getElementById("userText").innerHTML = word
+  document.getElementById("userText2").innerHTML = word
   console.log(word)
 };
 
   var key3MouseUp = function(){
-    num3.style.borderColor = "black";
-};
+    setInterval(function(){
+        num3.style.borderColor = "black" },  1000)} ;
+
 
 var key4 =  function(){
   num4.style.borderColor = "orange";
   word+=("F")
   document.getElementById("userText").innerHTML = word
+  document.getElementById("userText2").innerHTML = word
   console.log(word)
 };
 
   var key4MouseUp = function(){
-    num4.style.borderColor = "black";
-};
+    setInterval(function(){
+        num4.style.borderColor = "black" },  1000)} ;
 
 var key5 = function(){
   num5.style.borderColor = "orange";
   word+=("W");
   document.getElementById("userText").innerHTML = word
+  document.getElementById("userText2").innerHTML = word
   console.log(word)
   //wordCount;
 };
 
 var key5MouseUp = function(){
-  num5.style.borderColor = "black";
-};
+  setInterval(function(){
+      num5.style.borderColor = "black" },  1000)} ;
 
 var key6 = function(){
   num6.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
+  document.getElementById("userText2").innerHTML = word
   word+=("O");
   console.log(word);
   //wordCount;
 };
 
 var key6MouseUp = function(){
-  num6.style.borderColor = "black";
-};
+  setInterval(function(){
+      num6.style.borderColor = "black" },  1000)} ;
 
 var key7 = function(){
   num7.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
+  document.getElementById("userText2").innerHTML = word
   word+=("L");
   console.log(word)
   //wordCount;
 };
 
 var key7MouseUp = function(){
-  num7.style.borderColor = "black";
-};
+  setInterval(function(){
+      num7.style.borderColor = "black" },  1000)} ;
 
 var key8 = function(){
   num8.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
+  document.getElementById("userText2").innerHTML = word
   word+=("E");
   console.log(word)
   //wordCount;
 };
 
 var key8MouseUp = function(){
-  num8.style.borderColor = "black";
-};
+  setInterval(function(){
+      num8.style.borderColor = "black" },  1000)} ;
+
 
 var key9 = function(){
   num9.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
+  document.getElementById("userText2").innerHTML = word
   word+=("N");
   console.log(word)
   //wordCount;
 };
 
 var key9MouseUp = function(){
-  num9.style.borderColor = "black";
-};
+  setInterval(function(){
+      num9.style.borderColor = "black" },  1000)} ;
+
 
 var key10 = function(){
   num10.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
+  document.getElementById("userText2").innerHTML = word
   word+=("A");
   console.log(word)
   //wordCount;
 };
 
 var key10MouseUp = function(){
-  num10.style.borderColor = "black";
-};
+  setInterval(function(){
+      num10.style.borderColor = "black" },  1000)} ;
+
 
 var key11 = function(){
   num11.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
+  document.getElementById("userText2").innerHTML = word
   word+=("Q");
   console.log(word)
   //wordCount;
 };
 
 var key11MouseUp = function(){
-  num11.style.borderColor = "black";
-};
+  setInterval(function(){
+      num11.style.borderColor = "black" },  1000)} ;
+
 
 var key12 = function(){
   num12.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
+  document.getElementById("userText2").innerHTML = word
   word+=("M");
   console.log(word)
   //wordCount;
 };
 
 var key12MouseUp = function(){
-  num12.style.borderColor = "black";
-};
+  setInterval(function(){
+      num12.style.borderColor = "black" },  1000)} ;
+
 
 var key13 = function(){
   num13.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
+  document.getElementById("userText2").innerHTML = word
   word+=("D");
   console.log(word)
   //wordCount;
 };
 
 var key13MouseUp = function(){
-  num13.style.borderColor = "black";
-};
+  setInterval(function(){
+      num13.style.borderColor = "black" },  1000)} ;
+
 
 var key14 = function(){
   num14.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
+  document.getElementById("userText2").innerHTML = word
   word+=("R");
   console.log(word)
   //wordCount;
 };
 
 var key14MouseUp = function(){
-  num14.style.borderColor = "black";
-};
+  setInterval(function(){
+      num14.style.borderColor = "black" },  1000)} ;
+
 
 var key15 = function(){
   num15.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
+  document.getElementById("userText2").innerHTML = word
   word+=("U");
   console.log(word)
   //wordCount;
 };
 
 var key15MouseUp = function(){
-  num15.style.borderColor = "black";
-};
+  setInterval(function(){
+      num15.style.borderColor = "black" },  1000)} ;
+
 
 var key16 = function(){
   num16.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
+  document.getElementById("userText2").innerHTML = word
   word+=("I");
   console.log(word)
   //wordCount;
 };
 
 var key16MouseUp = function(){
-  num.style.borderColor = "black";
-};
+  setInterval(function(){
+      num16.style.borderColor = "black" },  1000)} ;
