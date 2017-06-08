@@ -38,8 +38,8 @@ If you complete all of the specs listed above (the checkboxes), there's no reaso
 
 Game uses real Boggle rules:
 - [ ] Letters must all be connected (second letter must be a "neighbor" of the first letter, third letter must be a "neighbor" of the second, and so on).
-- [ ] Words must be at least 3 letters long.
-- [ ] Game is timed: players have 1 minute to make as many words as possible.
+- [x ] Words must be at least 3 letters long.
+- [x ] Game is timed: players have 1 minute to make as many words as possible.
 - [ ] Words must be real English words; non-English words don't earn points. See [Validating Words](#validating-words) section for more information.
 
 #### Validating Words
