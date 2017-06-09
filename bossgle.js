@@ -1,5 +1,7 @@
 //alert("Testing, Testing, 123");
 
+
+
 var num1 = document.getElementById("num1");
 var num2 = document.getElementById("num2");
 var num3 = document.getElementById("num3");
@@ -29,9 +31,10 @@ var myReset = document.getElementById("myReset");
 var score = 0;
 var word = "";
 var num = document.getElementById("num1");
-console.log(num);
 var myVar;
 var library = []
+//var testfunction = isBasicWord("candle");
+
 //alert(num1);
 //document.getElementById("userText").style.display = "block";
 
@@ -46,21 +49,24 @@ myBtn.addEventListener('click', function(){
   var sideA = document.getElementById("sideA")
   sideA.appendChild(newDiv);
 
-    for(var i = 0; i < word.length + 1; i++){
-      if( i>= 2 === true){
-        //console.log(word);
-        score += (9 * word.length);
-        library.push("\n" +  word);
-        word = "";
-        userText.removeChild(userText.firstChild);
-        console.log(score);
-      }else{
-        score += 0 ;
-      }
-    }
+      for(var i = 1; i < word.length + 1; i++){
+        if( i >= 1 && isBasicWord(word.toLowerCase())){
+          //console.log("test");
+          score += (9 * word.length);
+          library.push("\n" +  word);
+          //word = word.toLowerCase();
+          console.log(word);
+          word = "";
+          userText.removeChild(userText.firstChild);
+          console.log(score);
+              }else{
+                alert("try a different word");
+                word = "";
+                return score + 0 ;
+              }
+          }
+
     document.getElementById("userScore").innerHTML = score;
-    //document.getElementById("userLib").innerHTML = '<p>'+library+'</p>';
-  //};
 });
 
 myClear.addEventListener('click', function(){
@@ -79,24 +85,12 @@ myReset.addEventListener('click', function(){
 });
 
 ////////Timer//
-/*myBtn.addEventListener('click', function(){
-  var gameTimer = function(){
-    setInterval(function(){
-      alert("Times Up");
-    }, 2000);
-  };
-})*/
 
 myBtn.addEventListener('click', function(){
   setInterval(function(){
-    alert("Times Up");
+    return alert("Times Up");
   }, 60000);
 })
-
-
-/////Dictionary///
-
-
 /////Keys////
 var key1 = function(){
   var n = word.length;
@@ -106,7 +100,18 @@ var key1 = function(){
   document.getElementById("userText2").innerHTML = word
   console.log(word)
 };
-
+/*
+num1.onmouseover = function(){ mouseOver() };
+function mouseOver(){
+  num1.style.height = "90px";
+  num1.style.width = "0px";
+}
+num1.onmouseout = function(){ mouseOut() };
+function mouseOut(){
+  num1.style.height = "80px";
+  num1.style.width = "80px";
+}
+*/
 key1MouseUp = function(){
     setInterval(function(){
         num1.style.borderColor = "black" },  1000)} ;
@@ -221,7 +226,7 @@ var key10 = function(){
   num10.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
   document.getElementById("userText2").innerHTML = word
-  word+=("A");
+  word+=("T");
   console.log(word)
   //wordCount;
 };
@@ -235,7 +240,7 @@ var key11 = function(){
   num11.style.borderColor = "orange";
   document.getElementById("userText").innerHTML = word
   document.getElementById("userText2").innerHTML = word
-  word+=("Q");
+  word+=("H");
   console.log(word)
   //wordCount;
 };
